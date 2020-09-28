@@ -26,7 +26,7 @@ app.get("/", (req, res) =>{
   
     VisitorModel.create({
         date: new Date(),
-        name: name ? name : "anonimo",
+        name: name ? name : "Anonimo",
     })
     res.send("<h1>El visitante fue almacenado con exito</h1>");
 });
